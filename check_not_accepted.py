@@ -25,7 +25,15 @@ agreed = map(lambda x: x.strip(), agreed)
 
 intersect = filter(users.has_key, agreed)
 
+s = 0
+
 for uid in users:
-    if not uid in intersect:
-	if uid < "286582":
+    if uid < "286582":
+        for a in agreed:
+            if uid == a:
+                s = 1
+        if s != 1:
 	    print users[uid]["count"], users[uid]["user"], uid
+            s = 0
+        else:
+            s = 0
