@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-f = open("italy.osm", "r")
+import sys
 
+file = sys.argv[1] + ".osm"
+f = open(file, "r")
 users = {}
 
 for line in f:
