@@ -40,7 +40,7 @@ for uid in users:
     if uid in intersect:
         count["ok"] += users[uid]["count"]
     else:
-	if uid < "286582":
+	if int(uid) < 286582:
 	    count["notok"] += users[uid]["count"]
 	else:
 	    count["ok"] += users[uid]["count"]
