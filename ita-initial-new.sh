@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Download the planet
-#rm italy.osm
-#wget http://download.geofabrik.de/osm/europe/italy.osm.bz2
-#bunzip2 italy.osm.bz2
+rm italy.osm
+wget http://download.geofabrik.de/osm/europe/italy.osm.bz2
+bunzip2 italy.osm.bz2
 
 # Get all the people from nodes
 rm italy_uids
