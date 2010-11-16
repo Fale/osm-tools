@@ -26,7 +26,7 @@
 ./downloader.sh europe iceland
 ./downloader.sh europe ireland
 ./downloader.sh europe isle_of_man
-./downloader.sh europe italy
+#./downloader.sh europe italy
 ./downloader.sh europe kosovo
 ./downloader.sh europe latvia
 ./downloader.sh europe liechtenstein
