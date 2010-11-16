@@ -28,7 +28,7 @@ intersect = filter(users.has_key, agreed)
 s = 0
 
 for uid in users:
-    if uid < "286582":
+    if int(uid) < 286582:
         for a in agreed:
             if uid == a:
                 s = 1
