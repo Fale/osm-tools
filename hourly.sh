@@ -4,7 +4,7 @@
 wget planet.openstreetmap.org/users_agreed/users_agreed.txt
 
 # Call the state.sh script for different countries
-./state.sh italy Italy ita
+./state.sh italy
 
 #Clean-up
 rm users_agreed.txt
