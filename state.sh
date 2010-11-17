@@ -4,6 +4,8 @@
 python check_uids.py users_agreed.txt $1_$2 $2 > $1_$2_status
 python check_not_accepted.py users_agreed.txt $1_$2 > $1_$2_not
 
+sed -e "1i# File users_agreed.txt: `stat -c '%y' users_agreed.txt`" -i $1_$2
+
 # Better having results sorted
 sort -rn $1_$2_not > $1_$2_not_accepted
 

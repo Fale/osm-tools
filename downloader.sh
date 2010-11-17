@@ -9,8 +9,7 @@ rm $1_$2
 python parser.py $2 > $1_$2_uids
 sort $1_$2_uids | uniq -c | sort -rn > $1_$2
 
-sed -e "1i#File $2.osm: `stat -c '%y' $2.osm`" -i $1_$2
-sed -e "1i#File users_agreed.txt: `stat -c '%y' users_agreed.txt`" -i $1_$2
+sed -e "1i# File $2.osm: `stat -c '%y' $2.osm`" -i $1_$2
 
 rm $2.osm
 rm $1_$2_uids
