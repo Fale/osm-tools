@@ -45,6 +45,6 @@ for uid in users:
 	else:
 	    count["ok"] += users[uid]["count"]
 
-print "Objects whose owner agreed: %s (%.2f%%)" % (count['ok'], count['ok'] * 100.0 / total)
-print "Objects whose owner DID NOT agree: %s (%.2f%%)" % (count['notok'], count['notok'] * 100.0 / total)
+print "Objects already relicensed: %s (%.2f%%)" % (count['ok'], count['ok'] * 100.0 / total)
+print "Objects not yet relicensed: %s (%.2f%%)" % (count['notok'], count['notok'] * 100.0 / total)
 
