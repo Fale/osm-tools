@@ -29,7 +29,6 @@ agreed = map(lambda x: x.strip(), agreed)
 
 intersect = filter(users.has_key, agreed)
 
-print "Users who have agreed:", len(agreed)
 print "Users who have edited in", place, ":", len(users)
 print "Users who have agreed at registration in", place, ":", newuser
 print "Users in", place, "who have explicitly agreed: %s (%.2f%%)" % (len(intersect), len(intersect) * 100.0 / len(users))

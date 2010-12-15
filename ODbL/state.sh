@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # Parse the list
@@ -12,8 +13,8 @@ sed -e "1i# File users_agreed.txt: `stat -c '%y' users_agreed.txt`" -i $1_$2_not
 sed -e "1i# File $2.osm: `stat -c '%y' $1_$2`" -i $1_$2_not_accepted
 
 # Move data to a public web_server
-scp -P 65321 $1_$2_status chopr@repo.grimp.eu:/home/chopr/repo.grimp.eu/public_html/osm/new/$1/$2_status
-scp -P 65321 $1_$2_not_accepted chopr@repo.grimp.eu:/home/chopr/repo.grimp.eu/public_html/osm/new/$1/$2_not_accepted
+scp -P 65321 $1_$2_status chopr@repo.grimp.eu:/home/chopr/repo.grimp.eu/public_html/osm/$1/$2_status
+scp -P 65321 $1_$2_not_accepted chopr@repo.grimp.eu:/home/chopr/repo.grimp.eu/public_html/osm/$1/$2_not_accepted
 
 #Clean-up
 rm $1_$2_not

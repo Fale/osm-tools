@@ -8,3 +8,5 @@ wget planet.openstreetmap.org/users_agreed/users_agreed.txt
 #Call state.sh with the right parameter
 ./state.sh europe italy
 
+# Clean for next run
+rm users_agreed.txt
