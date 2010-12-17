@@ -44,6 +44,6 @@ for uid in users:
 	else:
 	    count["ok"] += users[uid]["count"]
 
-print "Objects ready for relicensing: %s (%.2f%%)" % (count['ok'], count['ok'] * 100.0 / total)
-print "Objects not yet available for relicensing: %s (%.2f%%)" % (count['notok'], count['notok'] * 100.0 / total)
+print "Objects versions ready for relicensing: %s (%.2f%%)" % (count['ok'], count['ok'] * 100.0 / total)
+print "Objects versions not yet available for relicensing: %s (%.2f%%)" % (count['notok'], count['notok'] * 100.0 / total)
 

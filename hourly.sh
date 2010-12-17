@@ -5,7 +5,12 @@ wget planet.openstreetmap.org/users_agreed/users_agreed.txt
 
 #!/bin/bash
 
-#Call state.sh with the right parameter
+# Call to the other hourly file
+cd ODbL
+./hourly.sh
+cd ..
+
+# Call state.sh with the right parameter
 ./state.sh europe albania
 ./state.sh europe alps
 ./state.sh europe andorra
@@ -31,7 +36,7 @@ wget planet.openstreetmap.org/users_agreed/users_agreed.txt
 ./state.sh europe iceland
 ./state.sh europe ireland
 ./state.sh europe isle_of_man
-./state.sh europe italy
+#./state.sh europe italy
 ./state.sh europe kosovo
 ./state.sh europe latvia
 ./state.sh europe liechtenstein
